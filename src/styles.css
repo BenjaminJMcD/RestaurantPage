@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Syncopate";
+    src: url(./Syncopate-Regular.ttf);
+    font-weight: 400;
+    font-style:normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(./ty-finck-U_2AlnfIGIU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: "Syncopate";
+    color:rgb(220, 207, 207);
+}
+
+/*STATIC HEADER*/
+
+.templateHeader {
+    position:fixed;
+    width: 100%;
+    font-size: 24px;
+    height: 130px;
+    background-color: rgba(120,53,19, 30%);
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.title {
+    margin-top: 36px;
+    margin-bottom: 18px;
+}
+
+.address {
+    margin:0;
+}
+
+/* FRONT PAGE STYLING */
+
+.frontPage {
+    position: relative;
+    top: 180px;
+    width: 100%;
+    height: 450px;
+    background-color: rgba(10,10,10, 60%)
+}
+
+.welcome {
+    padding-top: 150px;
+    text-align: center;
+    margin: 0;
+    font-size: min(3vw, 32px);
+    font-weight: 800
+}
+
+.descript {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 14px;
+    font-size: min(1.8vw, 20px);
+    font-weight: 600;
+    width: min(60%, 615px);
+}
+
+.hours {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: min(1.8vw, 20px);
+    font-weight: 800;
+}
+
+/* STATIC FOOTER W NAV */
+
+.templateFooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(120,53,19, 30%)
+}
+
+.navBar {
+    height: 
+}
+
+.navBar button {
+    width: 20%;
+    
+}
+
+.templateFooter p {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    background-color: rgb(39,26,28);
+    margin-bottom: 0;
+}
+
+.templateFooter a {
+    color: rgb(220, 207, 207);
+}
+
+.gitLogo {
+    height: 15px;
+}
