@@ -7,20 +7,25 @@
 
 html {
     height: 100%;
+
 }
 
 body {
     background-image: url(./ty-finck-U_2AlnfIGIU-unsplash.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 800px;
+    overflow:hidden;
     font-family: "Syncopate";
     color:rgb(220, 207, 207);
+    margin: 0;
+
 }
 
 /*STATIC HEADER*/
 
 .templateHeader {
     position:fixed;
+    z-index: 2;
     width: 100%;
     font-size: 24px;
     height: 130px;
@@ -28,6 +33,12 @@ body {
     padding-top: 10px;
     text-align: center;
     padding-bottom: 30px;
+}
+
+@media screen and (max-width: 589px) {
+    .templateHeader {
+        height: 180px;
+    }
 }
 
 .title {
@@ -41,20 +52,30 @@ body {
 
 /* FRONT PAGE STYLING */
 
+#content {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: rgba(10,10,10, 60%);
+}
+
 .frontPage {
     position: relative;
-    top: 180px;
-    width: 100%;
-    height: 450px;
-    background-color: rgba(10,10,10, 60%)
+    top: 190px;
+} 
+
+@media screen and (max-width: 589px) {
+    .frontPage {
+    top: 220px;
+    }
 }
 
 .welcome {
-    padding-top: 150px;
+    padding-top: clamp(100px, 15%, 170px);
     text-align: center;
     margin: 0;
-    font-size: min(3vw, 32px);
-    font-weight: 800
+    font-size: clamp(20px, 3vw, 32px);
+    font-weight: 800;
 }
 
 .descript {
@@ -63,42 +84,56 @@ body {
     text-align: center;
     padding-bottom: 40px;
     padding-top: 14px;
-    font-size: min(1.8vw, 20px);
+    font-size: clamp(14px, 1.8vw, 20px);
     font-weight: 600;
     width: min(60%, 615px);
 }
 
 .hours {
     text-align: center;
-    padding-bottom: 100px;
-    font-size: min(1.8vw, 20px);
+    font-size: clamp(14px, 1.8vw, 20px);
     font-weight: 800;
+    margin:0;
+    padding-bottom: 10px;
 }
 
-/* STATIC FOOTER W NAV */
+/* STATIC NAV */
+
+.navBar {
+    position: fixed;
+    display:flex;
+    bottom: 60px;
+    height: 60px;
+    width: 100%;
+    justify-content:center;
+    gap: 40px;
+}
+
+.navBar button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Syncopate";
+    font-weight: 600;
+    color: rgb(39,26,28);
+    background-color: rgb(220, 207, 207);
+}
+
+/* STATIC FOOTER */
 
 .templateFooter {
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: rgba(120,53,19, 30%)
-}
-
-.navBar {
-    height: 
-}
-
-.navBar button {
-    width: 20%;
-    
 }
 
 .templateFooter p {
     font-weight: 600;
-    color: white;
+    color: rgb(220, 207, 207);
     text-align: center;
     background-color: rgb(39,26,28);
-    margin-bottom: 0;
+    margin: 0;
+    padding: 10px;
 }
 
 .templateFooter a {
