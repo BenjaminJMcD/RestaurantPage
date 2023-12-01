@@ -147,5 +147,6 @@ body {
 }
 
 .gitLogo {
+    background: url('./github-mark-white.svg');
     height: 15px;
 }
