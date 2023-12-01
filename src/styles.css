@@ -109,6 +109,12 @@ body {
     gap: 40px;
 }
 
+@media screen and (max-height: 610px) {
+    .navBar {
+        top: 220px;
+    }
+}
+
 .navBar button {
     width: 150px;
     height: 50px;
