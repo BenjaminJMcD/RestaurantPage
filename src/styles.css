@@ -99,9 +99,44 @@ body {
 
 /* MENU STYLING */
 
+.page {
+    overflow:auto;
+    position: relative;
+    height:500px;
+    top: 170px;
+}
+
 .heading {
     color: white;
     font-size: 48px;
+}
+
+.itemHeader {
+
+}
+
+#appetizerHeading {
+
+}
+
+.gridContainerMenu {
+
+}
+
+.menuItem {
+
+}
+
+.itemName {
+
+}
+
+.itemDescript {
+
+}
+
+.itemPrice {
+
 }
 
 /* CONTACT STYLING */
