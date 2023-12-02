@@ -1,6 +1,8 @@
 import './styles.css';
 import GitIcon from './github-mark-white.svg';
-import FrontPage from './frontPage';
+import FrontPage from './frontPage.js';
+import Menu from './menu.js';
+import Contact from './contact.js';
 
 function Component() {
 
@@ -12,6 +14,7 @@ function Component() {
     const header = document.createElement("header");
     header.classList.add("templateHeader");
     page.appendChild(header);
+    header.onclick = FrontPage;
 
     const title = document.createElement("h1");
     title.innerText = "WoodFire Pizzeria";
@@ -44,11 +47,13 @@ function Component() {
     menuBtn.classList.add("menuBtn");
     menuBtn.innerText = "Menu";
     navBar.appendChild(menuBtn);
+    menuBtn.onclick = Menu;
 
     const contactBtn = document.createElement("button");
     contactBtn.classList.add("contactBtn");
     contactBtn.innerText = "Contact";
     navBar.appendChild(contactBtn);
+    contactBtn.onclick = Contact;
 
     // FOOTER
 
@@ -65,9 +70,6 @@ function Component() {
     Icon.src = GitIcon;
     Icon.classList.add("gitLogo");
 
-    console.log(Icon);
-
-
     const gitHubLink = document.createElement("a");
     gitHubLink.setAttribute("href", "https://github.com/BenjaminJMcD");
     gitHubLink.appendChild(Icon)
@@ -75,10 +77,6 @@ function Component() {
     gitName.innerText = "BenjaminJMcD";
     gitHubLink.appendChild(gitName);
     gitHub.appendChild(gitHubLink);
-
-
-
-
 
     return page;
 
