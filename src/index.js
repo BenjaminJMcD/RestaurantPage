@@ -61,18 +61,24 @@ function Component() {
     gitHub.innerText = "Created By ";
     templateFooter.appendChild(gitHub);
 
-    const gitHubLink = document.createElement("a");
-    gitHubLink.setAttribute("href", "github.com/BenjaminJMcD");
-    gitHubLink.innerText = "BenjaminJMcD";
-    gitHub.appendChild(gitHubLink);
-
     const Icon = new Image();
     Icon.src = GitIcon;
+    Icon.classList.add("gitLogo");
 
-    const gitLogo = document.createElement("img");
-    gitLogo.classList.add("gitLogo")
-    gitLogo.setAttribute("src", Icon);
-    gitHubLink.appendChild(gitLogo);
+    console.log(Icon);
+
+
+    const gitHubLink = document.createElement("a");
+    gitHubLink.setAttribute("href", "https://github.com/BenjaminJMcD");
+    gitHubLink.appendChild(Icon)
+    const gitName = document.createElement("span");
+    gitName.innerText = "BenjaminJMcD";
+    gitHubLink.appendChild(gitName);
+    gitHub.appendChild(gitHubLink);
+
+
+
+
 
     return page;
 

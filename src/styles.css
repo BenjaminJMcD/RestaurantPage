@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Syncopate";
-    src: url(./Syncopate-Regular.ttf);
+    src: url('./Syncopate-Regular.ttf');
     font-weight: 400;
     font-style:normal;
 }
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-image: url(./ty-finck-U_2AlnfIGIU-unsplash.jpg);
+    background-image: url('./ty-finck-U_2AlnfIGIU-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: 100% 800px;
     overflow:hidden;
@@ -147,6 +147,5 @@ body {
 }
 
 .gitLogo {
-    background: url('./github-mark-white.svg');
     height: 15px;
 }

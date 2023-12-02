@@ -9,6 +9,10 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
+    devtool: 'inline-source-map',
+    devServer: {
+        static: './src',
+    },
     module: {
         rules: [
             {
@@ -29,5 +33,5 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Development',
         })
-    ]
+    ],
 };
