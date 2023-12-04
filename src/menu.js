@@ -36,7 +36,7 @@ export default function Menu() {
     const salad1 = new MenuItems("Fried Goat Cheese Salad", "arugula and romaine, corn, black olives, panko-fried goat cheese, spicy chipotle ranch", 10.98);
     saladList.push(salad1);
 
-    const salad2 = new MenuItems("Southern Fried Chicken Salad", "romaine and iceberg, corn, black olives, southern friend chicken breast strips, spicy chipotle ranch", 11.98);
+    const salad2 = new MenuItems("Southern Fried Chicken Salad", "romaine and iceberg, corn, black olives, southern fried chicken, spicy chipotle ranch", 11.98);
     saladList.push(salad2);
 
     const salad3 = new MenuItems("Steak and Blue Cheese Salad", "arugula and romaine, diced tomatoes, blue cheese crumbles, blue cheese dressing", 12.98);
@@ -118,19 +118,19 @@ export default function Menu() {
     /* PIZZAS */
 
     const pizzas = document.createElement("p");
-    salads.classList.add("itemHeader");
-    salads.innerText = "Pizzas";
-    salads.setAttribute("id", "pizzasHeading");
+    pizzas.classList.add("itemHeader");
+    pizzas.innerText = "Pizzas";
+    pizzas.setAttribute("id", "pizzasHeading");
     page.appendChild(pizzas);
 
     const pizzasContainer = document.createElement("div");
-    saladsContainer.classList.add("gridContainerMenu");
+    pizzasContainer.classList.add("gridContainerMenu");
     page.appendChild(pizzasContainer);
 
     addItems(pizzasList, pizzasContainer);
 
 
-
+    return page;
 
 
 

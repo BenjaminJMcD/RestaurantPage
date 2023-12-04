@@ -107,12 +107,12 @@ body {
 }
 
 .heading {
-    color: white;
+    color: rgb(220, 207, 207);
     font-size: 48px;
 }
 
 .itemHeader {
-
+    font-size: 24px;
 }
 
 #appetizerHeading {
@@ -120,23 +120,40 @@ body {
 }
 
 .gridContainerMenu {
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 420px);
+    gap: 20px;
 }
 
 .menuItem {
-
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 30px 1fr;
+    height: 120px;
+    width: 400px;
+    background-color: rgba(220, 207, 207, 80%);
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
 }
 
 .itemName {
-
-}
-
-.itemDescript {
-
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .itemPrice {
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+    text-align: end;
+}
 
+.itemDescript {
+    grid-area: 2 / 1 / 3 / 3;
+    margin: 0 10px 0 10px;
+    align-self: center;
 }
 
 /* CONTACT STYLING */
