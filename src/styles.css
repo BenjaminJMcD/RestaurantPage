@@ -25,7 +25,7 @@ body {
 
 .templateHeader {
     position:fixed;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     font-size: 24px;
     height: 130px;
@@ -95,8 +95,9 @@ body {
 
 .page {
     overflow:auto;
-    position: relative;
-    height:500px;
+    position: fixed;
+    height:calc(100% - 209px);
+    width: 100%;
     top: 170px;
 }
 
@@ -228,13 +229,21 @@ label {
     left: 300px;
 }
 
+/* NAV BUTTONS SHARED */
 
+.navBarHome button {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Syncopate";
+    font-weight: 600;
+    color: rgb(39,26,28);
+    background-color: rgb(220, 207, 207);
+}
 
+/* NAV HOME */
 
-
-/* STATIC NAV */
-
-.navBar {
+.navBarHome {
     position: fixed;
     display:flex;
     bottom: 60px;
@@ -245,20 +254,34 @@ label {
 }
 
 @media screen and (max-height: 610px) {
-    .navBar {
+    .navBarHome {
         top: 220px;
     }
 }
 
-.navBar button {
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    font-family: "Syncopate";
-    font-weight: 600;
-    color: rgb(39,26,28);
-    background-color: rgb(220, 207, 207);
+/* NAV HIDDEN */
+
+.hidden {
+    display:none;
 }
+
+/* NAV BUTTON UPPER RIGHT CORNER */
+
+.topRight {
+    position: fixed;
+    top:200px;
+    right: 5%;
+}
+
+@media screen and (max-width: 589px) {
+    .navBarHome button {
+        width: 100px;
+    }
+    .topRight {
+        top:245px;
+    }
+}
+
 
 /* STATIC FOOTER */
 

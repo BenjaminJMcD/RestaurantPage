@@ -13,6 +13,10 @@ export default function Contact() {
     heading.innerText = "CONTACT";
     page.appendChild(heading);
 
+    // NAV //
+
+    
+
     // CONTACT INFO //
 
     const phone = document.createElement("p");

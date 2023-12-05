@@ -14,7 +14,8 @@ function Component() {
     const header = document.createElement("header");
     header.classList.add("templateHeader");
     page.appendChild(header);
-    header.onclick = FrontPage;
+    header.onclick = switchFrontPage;
+
 
     const title = document.createElement("h1");
     title.innerText = "WoodFire Pizzeria";
@@ -36,24 +37,49 @@ function Component() {
 
     content.appendChild(Contact());
 
-
-    // NAV BAR
+    // NAV
 
     const navBar = document.createElement("nav");
-    navBar.classList.add("navBar");
+    navBar.classList.add("navBarHome");
     page.appendChild(navBar);
 
     const menuBtn = document.createElement("button");
-    menuBtn.classList.add("menuBtn");
     menuBtn.innerText = "Menu";
     navBar.appendChild(menuBtn);
-    menuBtn.onclick = Menu;
+    menuBtn.onclick = switchMenu;
+
 
     const contactBtn = document.createElement("button");
-    contactBtn.classList.add("contactBtn");
     contactBtn.innerText = "Contact";
     navBar.appendChild(contactBtn);
-    contactBtn.onclick = Contact;
+    contactBtn.onclick = switchContact;
+
+
+    // HANDLE ONCLICK DYNAMIC NAV AND PAGE
+
+    function switchContact () {
+        contactBtn.classList.remove("topRight");
+        contactBtn.classList.add("hidden");
+        menuBtn.classList.remove("hidden");
+        menuBtn.classList.add("topRight");
+        Contact();
+    }
+
+    function switchMenu() {
+        menuBtn.classList.remove("topRight");
+        menuBtn.classList.add("hidden");
+        contactBtn.classList.remove("hidden");
+        contactBtn.classList.add("topRight");
+        Menu();
+    }
+
+    function switchFrontPage() {
+        menuBtn.classList.remove("hidden");
+        menuBtn.classList.remove("topRight");
+        contactBtn.classList.remove("hidden");
+        contactBtn.classList.remove("topRight");
+        FrontPage();
+    }
 
     // FOOTER
 
