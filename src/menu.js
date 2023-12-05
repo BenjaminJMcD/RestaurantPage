@@ -33,13 +33,13 @@ export default function Menu() {
     const app4 = new MenuItems("Smothered Fries", "bacon, in-house cheese sauce, fresh jalapenos, sour cream", 10.98);
     appList.push(app4);
 
-    const salad1 = new MenuItems("Fried Goat Cheese Salad", "arugula and romaine, corn, black olives, panko-fried goat cheese, spicy chipotle ranch", 10.98);
+    const salad1 = new MenuItems("Fried Goat Cheese ", "arugula and romaine, corn, black olives, panko-fried goat cheese, spicy chipotle ranch", 10.98);
     saladList.push(salad1);
 
-    const salad2 = new MenuItems("Southern Fried Chicken Salad", "romaine and iceberg, corn, black olives, southern fried chicken, spicy chipotle ranch", 11.98);
+    const salad2 = new MenuItems("Southern Fried Chicken", "romaine and iceberg, corn, black olives, southern fried chicken, spicy chipotle ranch", 11.98);
     saladList.push(salad2);
 
-    const salad3 = new MenuItems("Steak and Blue Cheese Salad", "arugula and romaine, diced tomatoes, blue cheese crumbles, blue cheese dressing", 12.98);
+    const salad3 = new MenuItems("Steak and Blue Cheese", "arugula and romaine, diced tomatoes, blue cheese crumbles, blue cheese dressing", 12.98);
     saladList.push(salad3);
 
     const pizza1 = new MenuItems("Meat", "Tomatoes, mozzarella, italian sausage, bacon, pepperoni", 13.74);

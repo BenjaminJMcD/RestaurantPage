@@ -120,34 +120,36 @@ body {
 
 .itemHeader {
     font-size: 24px;
-}
-
-#appetizerHeading {
-
+    font-weight: 600;
+    margin-left: 10%;
 }
 
 .gridContainerMenu {
     display: grid;
     grid-template-columns: repeat(auto-fit, 420px);
     gap: 20px;
+    margin-left: 10%;
+    margin-bottom: 40px;
 }
 
 .menuItem {
     display:grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 30px 1fr;
-    height: 120px;
+    height: 100px;
     width: 400px;
-    background-color: rgba(220, 207, 207, 80%);
-    border: 1px solid black;
+    background-color:rgba(10,10,10, 70%);
+    border: 5px solid rgb(220, 207, 207);
     border-radius: 10px;
-    color: black;
+    color: rgb(220, 207, 207);
+    font-weight: 600;
 }
 
 .itemName {
     margin: 0;
     padding-top: 10px;
     padding-left: 10px;
+    font-size: 18px;
 }
 
 .itemPrice {
@@ -155,12 +157,14 @@ body {
     padding-top: 10px;
     padding-right: 10px;
     text-align: end;
+    font-size: 18px;
 }
 
 .itemDescript {
     grid-area: 2 / 1 / 3 / 3;
-    margin: 0 10px 0 10px;
-    align-self: center;
+    margin: 14px 10px 0 10px;
+
+    font-size: 14px;
 }
 
 /* CONTACT STYLING */
