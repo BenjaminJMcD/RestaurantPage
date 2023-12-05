@@ -35,6 +35,10 @@ body {
     padding-bottom: 30px;
 }
 
+.templateHeader:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 589px) {
     .templateHeader {
         height: 180px;
@@ -245,6 +249,10 @@ label {
     font-weight: 600;
     color: rgb(39,26,28);
     background-color: rgb(220, 207, 207);
+}
+
+.navBarHome button:hover {
+    cursor:pointer;
 }
 
 /* NAV HOME */
