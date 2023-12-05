@@ -34,7 +34,7 @@ function Component() {
 
     page.appendChild(content);
 
-    content.appendChild(Menu());
+    content.appendChild(Contact());
 
 
     // NAV BAR

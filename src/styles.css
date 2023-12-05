@@ -64,12 +64,6 @@ body {
     top: 190px;
 } 
 
-@media screen and (max-width: 589px) {
-    .frontPage {
-    top: 220px;
-    }
-}
-
 .welcome {
     padding-top: clamp(100px, 15%, 170px);
     text-align: center;
@@ -97,7 +91,7 @@ body {
     padding-bottom: 10px;
 }
 
-/* MENU STYLING */
+/* MENU + CONTACT SHARED STYLING */
 
 .page {
     overflow:auto;
@@ -109,7 +103,19 @@ body {
 .heading {
     color: rgb(220, 207, 207);
     font-size: 48px;
+    text-align: center;
 }
+
+@media screen and (max-width: 589px) {
+    .frontPage {
+        top: 220px;
+    }
+    .page {
+        top: 220px;
+    }
+}
+
+/* MENU STYLING */
 
 .itemHeader {
     font-size: 24px;
@@ -157,6 +163,72 @@ body {
 }
 
 /* CONTACT STYLING */
+
+.phoneContact, .emailContact, .addressContact {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#msgFormContact {
+    margin-top: 60px;
+}
+
+.msgHeaderContact {
+    margin-left: 5%;
+}
+
+.formDivs {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.msgLabel {
+    position:relative;
+    bottom: 190px;
+}
+
+#FullName {
+    position:relative;
+    height: 20px;
+    left: 10px;
+    width: min(68%, 600px);
+}
+
+#Email {
+    position: relative;
+    height: 20px;
+    left: 66px;
+    width: min(68%, 600px);
+}
+
+#Message {
+    position: relative;
+    height: 200px;
+    width: min(68%, 600px);
+    left: 27px;
+}
+
+.submitBtn {
+    position:relative;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: "Syncopate";
+    font-weight: 600;
+    color: rgb(39,26,28);
+    background-color: rgb(220, 207, 207);
+    margin-top: 10px;
+    left: 300px;
+}
+
+
 
 
 
